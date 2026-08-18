@@ -1,0 +1,67 @@
+@import url('https://googleapis.com');
+body {
+    background-image: url(images/boreal.jpg);
+    background-color: #0b0e14;
+    background-size: cover;           /* Ajusta la imagen al fondo */
+    background-attachment: fixed;     /* Fondo fijo */
+    line-height: 1.6;
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    margin: 0;
+    padding: 2rem;                    /* Padding base para móviles */
+    align-items: center;
+    max-width: 1000px;
+    margin: 0 auto;
+
+}
+
+.sobre-mi {
+    background-color: #0f141d;
+    display: flex;
+    opacity: 95%;
+    gap: 1.5rem;
+    align-items: center;
+    border-radius: 12px;
+    /* Limitamos el ancho para ejercer el centrado */
+    margin: 0 auto;
+}
+
+.texto-sobre-mi {
+    padding-right: 5%;
+    padding-left: 5%;
+}
+
+.ascii-art {
+    padding-left: 5%;
+    color: #a855f7;
+}
+
+.body-proyectos {
+    background-color: #0f141d;
+}
+
+.portfolio-presentation {
+    background-color: #0f141d;
+    border-radius: 12px;
+    opacity: 95%;
+    text-align: center;
+
+    
+}
+
+.title-about-me {
+    text-align: center;
+    background-color: #0f141d;
+    margin: 0 auto;
+    color: #1da452;
+}
+
+.kali-type {
+    color: #5555ff;
+}
+
+.yoyo {
+    color: #1da452;
+    text-shadow: 2px 2px #002c00;
+    text-align: left;
+}
