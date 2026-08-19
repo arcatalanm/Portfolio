@@ -1,67 +1,107 @@
-@import url('https://googleapis.com');
 body {
-    background-image: url(images/boreal.jpg);
     background-color: #0b0e14;
-    background-size: cover;           /* Ajusta la imagen al fondo */
-    background-attachment: fixed;     /* Fondo fijo */
-    line-height: 1.6;
-    color: white;
+    color: #ffffff;
     font-family: 'Courier New', Courier, monospace;
+    line-height: 1.6;
     margin: 0;
-    padding: 2rem;                    /* Padding base para móviles */
-    align-items: center;
-    max-width: 1000px;
-    margin: 0 auto;
-
-}
-
-.sobre-mi {
-    background-color: #0f141d;
+    padding: 2rem 1rem;
     display: flex;
-    opacity: 95%;
-    gap: 1.5rem;
+    flex-direction: column;
     align-items: center;
+}
+
+/* CONTENEDOR PRINCIPAL */
+.main-content {
+    width: 100%;
+    max-width: 1000px;
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+}
+
+/* HEADER */
+.terminal-banner {
+    width: 100%;
+    max-width: 1000px;
+    background-color: rgba(15, 20, 29, 0.95);
     border-radius: 12px;
-    /* Limitamos el ancho para ejercer el centrado */
-    margin: 0 auto;
-}
-
-.texto-sobre-mi {
-    padding-right: 5%;
-    padding-left: 5%;
-}
-
-.ascii-art {
-    padding-left: 5%;
-    color: #a855f7;
-}
-
-.body-proyectos {
-    background-color: #0f141d;
-}
-
-.portfolio-presentation {
-    background-color: #0f141d;
-    border-radius: 12px;
-    opacity: 95%;
     text-align: center;
-
-    
+    padding: 1rem;
+    margin-bottom: 2rem;
 }
 
-.title-about-me {
-    text-align: center;
-    background-color: #0f141d;
-    margin: 0 auto;
-    color: #1da452;
-}
-
-.kali-type {
+.terminal-banner__user {
     color: #5555ff;
 }
 
-.yoyo {
+/* COMPONENTE: SOBRE MÍ */
+.about-card {
+    background-color: rgba(15, 20, 29, 0.95);
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    padding: 2rem;
+}
+
+.about-card__ascii {
+    margin: 0;
+    color: #a855f7;
+    line-height: 1;
+}
+
+.about-card__content {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.about-card__content h2,
+.about-card__content p {
+    margin: 0;
+}
+
+/* COMPONENTE: PROYECTOS */
+.projects-section {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.section-title {
+    background-color: rgba(15, 20, 29, 0.95);
+    border-radius: 12px;
+    text-align: center;
+    margin: 0;
+    padding: 0.8rem;
+}
+
+.project-card {
+    background-color: rgba(15, 20, 29, 0.95);
+    border-radius: 12px;
+    padding: 2rem;
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+}
+
+.project-card__info {
+    flex: 1;
+}
+
+.project-card__info h3 {
+    margin-top: 0;
+}
+
+.project-card__img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+/* UTILIDADES */
+.text-accent {
     color: #1da452;
     text-shadow: 2px 2px #002c00;
-    text-align: left;
 }

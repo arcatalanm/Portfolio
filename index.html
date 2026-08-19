@@ -1,20 +1,24 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <link rel="stylesheet" href="styles.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dubidubi</title>
+    <title>Dubidubi | Portafolio</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <!-- Header de presentación -->
-    <header class="portfolio-presentation"> 
-        <h1> <span class="kali-type">ariel@portfolio</span>:~$  </h1>
+
+    <!-- Encabezado / Terminal banner -->
+    <header class="terminal-banner"> 
+        <h1><span class="terminal-banner__user">ariel@portfolio</span>:~$</h1>
     </header>
     
-    <section class="sobre-mi">
-        <!-- Oculta carácteres a lectores -->
-        <pre aria-hidden="true" class="ascii-art">   
+    <!-- Contenido principal -->
+    <main class="main-content">
+
+        <!-- Sección: Sobre Mí -->
+        <section class="about-card">
+            <pre aria-hidden="true" class="about-card__ascii">   
                         ⡀⠰⡄⠀⠀⠀⠀⠀⠀⠀⠀⢀⣀⣠⡤
 ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢻⡀⠙⣦⡀⠀⠀⠀⢀⣤⠞⠋⢁⡤
 ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠲⢦⣤⣤⣤⣀⣀⣀⣀⣀⣷⡄⠈⠛⢦⣄⣠⡟⠁⢀⡾⠁
@@ -40,18 +44,34 @@
 ⠀⢠⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣦⡀⠀⠀⠀⠀⠀
 ⠀⣸⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡄⠀⠀⠀⠀
 ⣰⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡿⣿⣿⣿⣿⣿⣿⣿⣦
-        </pre>
-        <div class="texto-sobre-mi">    
-            <h2> <span class="yoyo"> Sobre mí </span></h2>
-            <p> Estudiante de Ingeniería en Informática especializado en Desarrollo de Software. Mi enfoque principal es el diseño, construcción y optimización de sistemas backend robustos, priorizando la escalabilidad, la mantenibilidad y la arquitectura limpia. <br> <br>Busco soluciones eficientes que garanticen un rendimiento sostenible y una estructura de código ordenada basada en patrones de diseño probados en la industria (Java, Spring Boot, REST APIs, Microservicios y Docker). </p>
-        </div>
-    </section>
-    <hr>
-    <div class="body-proyectos">
-        <h2> Proyectos </h2>
-        <h3> Backend de ferretería (ferrefix)</h3>
-        <img src="images/ferrefix.jpg" alt="Imágen referencial de proyecto backend de ferretería" height="200px" width=400px>
-        <p> Modernización digital de una ferretería mediante la implementación de 10 microservicios autónomos con bases de datos independientes y orquestados con Docker. Cuenta con seguridad basada en Spring Security y JWT, pruebas unitarias con JUnit 5 y Mockito, e integración total de inventarios, ventas, arriendos y reportes. </p>
-    </div>
+            </pre>
+            
+            <div class="about-card__content">    
+                <h2><span class="text-accent">SOBRE MÍ</span></h2>
+                <p>
+                    Estudiante de Ingeniería en Informática especializado en Desarrollo de Software. Mi enfoque principal es el diseño, construcción y optimización de sistemas backend robustos, priorizando la escalabilidad, la mantenibilidad y la arquitectura limpia.
+                </p> 
+                <p>
+                    Busco soluciones eficientes que garanticen un rendimiento sostenible y una estructura de código ordenada basada en patrones de diseño probados en la industria (Java, Spring Boot, REST APIs, Microservicios y Docker).
+                </p>
+            </div>
+        </section>
+
+        <!-- Sección: Proyectos -->
+        <section class="projects-section">
+            <h2 class="section-title text-accent">PROYECTOS</h2>
+            
+            <article class="project-card">
+                <div class="project-card__info">
+                    <h3>Backend de Ferretería</h3>
+                    <p>
+                        Modernización digital de una ferretería mediante la implementación de 10 microservicios autónomos con bases de datos independientes y orquestados con Docker. Cuenta con seguridad basada en Spring Security y JWT, pruebas unitarias con JUnit 5 y Mockito, e integración total de inventarios, ventas, arriendos y reportes.
+                    </p>
+                </div>
+                <img class="project-card__img" src="images/ferrefix.jpg" alt="Captura del backend de Ferrefix" width="400" height="200">
+            </article>
+        </section>
+
+    </main>
 </body>
 </html>
