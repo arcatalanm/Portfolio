@@ -1,7 +1,7 @@
 body {
     background-color: #0b0e14;
     color: #ffffff;
-    font-family: 'Courier New', Courier, monospace;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     line-height: 1.6;
     margin: 0;
     padding: 2rem 1rem;
@@ -50,6 +50,10 @@ body {
     line-height: 1;
 }
 
+.about-card__title {
+    color: #1da452;
+}
+
 .about-card__content {
     display: flex;
     flex-direction: column;
@@ -63,6 +67,8 @@ body {
 
 /* COMPONENTE: PROYECTOS */
 .projects-section {
+    background-color: rgba(15, 20, 29, 0.95);
+    border-radius: 12px;
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
@@ -101,7 +107,21 @@ body {
 }
 
 /* UTILIDADES */
-.text-accent {
+.projects-section__tittle {
+    text-align: center;
     color: #1da452;
     text-shadow: 2px 2px #002c00;
+}
+
+.certifications-section {
+    background-color: rgba(15, 20, 29, 0.95);
+    border-radius: 20px;
+    text-align: center;
+}
+
+.certifications-section__title {
+    background-color: rgba(15, 20, 29, 0.95);
+    color: #1da452;
+    border-radius: 12px;
+    text-align: center;
 }
